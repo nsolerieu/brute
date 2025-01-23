@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Brutus | a minimal and aggressive css layout system to outrule unwieldy CSS frameworks</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	
+	<link rel="stylesheet" href="brutus.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- BODY -->
+<body class="">
+
+	<header>
+		<div class="container-small">
+			<div class="row">
+				<div class="col-50">
+					<strong class="brand-lol">Brutus.css</strong>
+				</div>
+				<div class="col-50 text-align-right">
+					<span class="text-color-secondary">~2kb / 0 shits given</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="hero padded-section">
+    	<div class="container-small">
+    	  <div class="row">
+    	    <div class="col-100">
+    	      <h1>A tiny, opinionated, and aggressive css layout system to outrule unwieldy css framework overlord</h1>
+    	      <div>
+    	        <a href="https://slrncl.com/assets/css/boot.css" target="_blank" class="button-primary">Download</a>
+    	        &nbsp;
+    	        <span class="text-small text-color-secondary">2kb (uncompressed)</span>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row medium-margin-top">
+    	  	<div class="col-50 dont-collapse">
+    	  		2 breakpoints (Desktop + mobile)<br>
+    	  		5 fluid column sizes<br>
+    	  		4 container sizes<br>
+    	  		Keylines<br>
+    	  	</div>
+    	  	<div class="col-50 dont-collapse">
+    	  		No mobile/tablet classes<br>
+    	  		No offsets<br>
+    	  		No alignment control<br>
+    	  		No ordering control<br>
+    	  	</div>
+    	  </div>
+    	</div>
+	</section>
+
+    <section class="padded-section">
+        <div class="container-small">
+          <div class="row full-row-border-top">
+            <div class="col-100">
+              <h2>Introduction</h2>
+              <p class="small-margin-top">
+                It is opinionated and restrictive by design and fit perfectly the <a href="#ethos">ethos</a> of this site. The class names reflect their width in % (col-50 = 50%). By default, all columns will collapse to 100% width on mobile (any screen under <code>840px</code> wide). 2 columns are possible on mobile by using the classes <code>.col-50.dont-collapse</code> and <code>col-25.collapse-to-50</code> <code>col-75.collapse-to-50</code>. If you don't want gutters/gaps use <code>.row.unpadded</code>. All elements inside a column are <code>width:100%</code> blocks unless nested within an inline element like a paragraph.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+	<section>
+    	<div class="container">
+
+    	  <div class="row">
+    	    <div class="col-50 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-50</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-50 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-50</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-33 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-33</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-33 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-33</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-33 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-33</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-50 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-50</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-100 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-100</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-50 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-50</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-25 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-100 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-100</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-25 collapse-to-50 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-25.collapse-to-50</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-75 collapse-to-50 small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-75.collapse-to-50</p>
+    	      </div>
+    	    </div>
+    	  </div>
+    	  <div class="row">
+    	    <div class="col-50 dont-collapse small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-50.dont-collapse</p>
+    	      </div>
+    	    </div>
+    	    <div class="col-50 dont-collapse small-margin-top">
+    	      <div class="box">
+    	        <p class="text-small">.col-50.dont-collapse</p>
+    	      </div>
+    	    </div>
+    	  </div>
+
+    	</div>
+	</section>
+
+	<section class="padded-section">
+		<div class="container-small">
+			<div class="row">
+				<div class="col-100">
+					<h2>Layout</h2>
+					<p class="small-margin-top">
+					It is opinionated and restrictive by design and fit perfectly the <a href="#ethos">ethos</a> of this site. The class names reflect their width in % (col-50 = 50%). By default, all columns will collapse to 100% width on mobile (any screen under <code>840px</code> wide). 2 columns are possible on mobile by using the classes <code>.col-50.dont-collapse</code> and <code>col-25.collapse-to-50</code> <code>col-75.collapse-to-50</code>. If you don't want gutters/gaps use <code>.row.unpadded</code>. All elements inside a column are <code>width:100%</code> blocks unless nested within an inline element like a paragraph.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="padded-section">
+		<div class="container-small">
+			<div class="row">
+				<div class="col-100">
+					<h2>Usage</h2>
+
+<pre>
+&lt;section&gt;
+  &lt;div class="container-small"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-50"&gt;
+        &lt;img src="img/cool.png" class="fluid-img"&gt;
+      &lt;/div&gt;
+      &lt;div class="col-50"&gt;
+        &lt;h2&gt;Layout&lt;/h2&gt;
+        &lt;p&gt;
+          Descriptions, when well written, are so lovely
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="padded-section">
+		<div class="container-small">
+			<div class="row">
+				<div class="col-100">
+					<h2>Containers</h2>
+					<p class="small-margin-top">
+					Brutus comes with 3 container presets. You can also flex flull width, that goes without saying. The idea is to suggest a set to stick to and avoid inconsistencies while covering most editorial needs.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-large">
+			<div class="col-100">
+				<div class="box small-margin-top">
+					<p class="text-small">.container-large</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-100">
+				<div class="box small-margin-top">
+					<p class="text-small">.container</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-small small-margin-top">
+			<div class="col-100">
+				<div class="box">
+					<p class="text-small">.container-small</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="padded-section">
+		<div class="container-small">
+			<div class="row">
+				<div class="col-100">
+					<h2>Why?</h2>
+					<p class="small-margin-top">
+					This is a reaction the over engineered frameworks
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<footer>
+		<div class="container-small">
+			<div class="col-100">
+				<span>Brutus (the css grid, not the guy) • made by @slrncl</span>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+</body>

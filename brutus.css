@@ -1,0 +1,133 @@
+/* --------------------------------------------------------------
+/* = This is Brutus
+-------------------------------------------------------------- */
+:root {
+  --gutter: 15px;
+}
+.container-small {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.container-large {
+  width: 100%;
+  max-width: 1248px;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col-50 {
+  width: 50%;
+  padding: 0 var(--gutter);
+  max-width: 50%;
+}
+.col-25 {
+  width: 25%;
+  padding: 0 var(--gutter);
+  max-width: 25%;
+}
+.col-33 {
+  width: 33.3%;
+  padding: 0 var(--gutter);
+  max-width: 33.3%;
+}
+.col-75 {
+  width: 75%;
+  padding: 0 var(--gutter);
+  max-width: 75%;
+}
+.col-100 {
+  width: 100%;
+  padding: 0 var(--gutter);
+  max-width: 100%;
+}
+
+.row.unpadded .col-50,
+.row.unpadded .col-25,
+.row.unpadded .col-33,
+.row.unpadded .col-75,
+.row.unpadded .col-100 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.right-padded-col {
+  padding-right: 80px;
+}
+
+@media screen and (max-width: 840px) {
+  .col-50, .col-25, .col-33, .col-75 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .col-50.dont-collapse, .col-25.collapse-to-50,  .col-75.collapse-to-50 {
+    width: 50%;
+    max-width: 50%;
+  }
+  .large-container, .container {
+    padding: 0 var(--gutter);
+  }
+  .right-padded-col {
+    padding-right: var(--gutter);
+  }
+}
+
+/* --------------------------------------------------------------
+/* = Layout borders top/bottom
+-------------------------------------------------------------- */
+.row.unpadded.full-row-border-top::before,
+.row.unpadded.full-row-border-bottom::before {
+  left: 0;
+  width: 100%;
+}
+.full-row-border-top, 
+.full-col-border-top, 
+.full-row-border-bottom, 
+.full-col-border-bottom {
+  position: relative;
+}
+.full-row-border-top::before {
+  content: "";
+  background: var(--border);
+  height: 1px;
+  width: calc(100% - calc(var(--gutter)*2));
+  top: 0;
+  left: var(--gutter);
+  position: absolute;
+}
+.full-row-border-bottom::after {
+  content: "";
+  background: var(--border);
+  height: 1px;
+  width: calc(100% - calc(var(--gutter)*2));
+  bottom: 0;
+  left: var(--gutter);
+  position: absolute;
+}
+.full-col-border-top::before {
+  content: "";
+  background: var(--border);
+  height: 1px;
+  width: calc(100% - calc(var(--gutter)*2));
+  top: 0;
+  left: var(--gutter);
+  position: absolute;
+}
+.full-col-border-bottom::after {
+  content: "";
+  background: var(--border);
+  height: 1px;
+  width: calc(100% - calc(var(--gutter)*2));
+  bottom: 0;
+  left: var(--gutter);
+  position: absolute;
+}
