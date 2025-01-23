@@ -356,6 +356,22 @@ a.block-link {
   display: block;
   position: relative;
 }
+ul {
+  margin-bottom: 24px;
+  padding: 20px;
+  list-style: none;
+  font-size: var(--font-size-regular);
+  color: var(--text-secondary);
+}
+ul li {
+  margin-bottom: 20px;
+}
+ul li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
 p a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: underline;
   text-decoration-color: var(--text-secondary);
@@ -420,6 +436,7 @@ label {
   margin: 0;
   font-size: var(--font-size-regular);
   line-height: 1.6;
+  margin-bottom: 4px;
   display: block;
   hyphens: auto;
   -webkit-hyphenate-character: "-";
