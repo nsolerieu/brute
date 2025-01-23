@@ -50,7 +50,6 @@
   padding: 0 var(--gutter);
   max-width: 100%;
 }
-
 .row.unpadded .col-50,
 .row.unpadded .col-25,
 .row.unpadded .col-33,
@@ -59,11 +58,9 @@
   padding-left: 0;
   padding-right: 0;
 }
-
 .right-padded-col {
   padding-right: 80px;
 }
-
 @media screen and (max-width: 840px) {
   .col-50, .col-25, .col-33, .col-75 {
     width: 100%;
@@ -80,9 +77,8 @@
     padding-right: var(--gutter);
   }
 }
-
 /* --------------------------------------------------------------
-/* = Layout borders top/bottom
+/* = Keylines
 -------------------------------------------------------------- */
 .row.unpadded.full-row-border-top::before,
 .row.unpadded.full-row-border-bottom::before {
