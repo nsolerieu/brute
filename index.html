@@ -15,14 +15,14 @@
 <!-- BODY -->
 <body class="">
 
-	<header>
+	<header class="padded-section">
 		<div class="container-small">
-			<div class="row">
-				<div class="col-50">
+			<div class="row full-row-border-bottom">
+				<div class="col-50 dont-collapse small-margin-bottom">
 					<strong class="brand-lol">Brutus.css</strong>
 				</div>
-				<div class="col-50 text-align-right">
-					<span class="text-color-secondary">~2kb / 0 shits given</span>
+				<div class="col-50 dont-collapse text-align-right small-margin-bottom">
+					<span class="text-color-secondary text-small">~2kb / 0 shits given</span>
 				</div>
 			</div>
 		</div>
@@ -33,14 +33,14 @@
     	  <div class="row">
     	    <div class="col-100">
     	      <h1>A tiny, opinionated, and aggressive css layout system to outrule unwieldy css framework overlord</h1>
-    	      <div>
+    	      <div class="medium-margin-top">
     	        <a href="https://slrncl.com/assets/css/boot.css" target="_blank" class="button-primary">Download</a>
     	        &nbsp;
     	        <span class="text-small text-color-secondary">2kb (uncompressed)</span>
     	      </div>
     	    </div>
     	  </div>
-    	  <div class="row medium-margin-top">
+    	  <div class="row large-margin-top">
     	  	<div class="col-50 dont-collapse">
     	  		2 breakpoints (Desktop + mobile)<br>
     	  		5 fluid column sizes<br>
@@ -254,48 +254,96 @@
 			</div>
 		</div>
 
-		<div class="container-large">
-			<div class="col-100">
-				<div class="box small-margin-top">
-					<p class="text-small">.container-large</p>
-				</div>
-			</div>
+		<div class="container-large medium-margin-top">
+            <div class="row">
+    			<div class="col-100">
+    				<div class="box small-margin-top">
+    					<p class="text-small">.container-large</p>
+    				</div>
+    			</div>
+            </div>
 		</div>
 		<div class="container">
-			<div class="col-100">
-				<div class="box small-margin-top">
-					<p class="text-small">.container</p>
-				</div>
-			</div>
+            <div class="row">
+    			<div class="col-100">
+    				<div class="box small-margin-top">
+    					<p class="text-small">.container</p>
+    				</div>
+    			</div>
+            </div>
 		</div>
 		<div class="container-small small-margin-top">
-			<div class="col-100">
-				<div class="box">
-					<p class="text-small">.container-small</p>
-				</div>
-			</div>
+            <div class="row">
+    			<div class="col-100">
+    				<div class="box">
+    					<p class="text-small">.container-small</p>
+    				</div>
+    			</div>
+            </div>
 		</div>
 	</section>
 
-	<section class="padded-section">
-		<div class="container-small">
-			<div class="row">
-				<div class="col-100">
-					<h2>Why?</h2>
-					<p class="small-margin-top">
-					This is a reaction the over engineered frameworks
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+
+    <section class="padded-section">
+        <div class="container-small">
+            <div class="row">
+                <div class="col-100">
+                    <h2>Keylines</h2>
+                    <p class="small-margin-top">
+                    Keylines or borders are great. They create subtle separation between sections. Brutus allows only top and bottom on both columns and rows.
+                    </p>
+                </div>
+            </div>
+            <div class="row full-row-border-top medium-margin-top">
+                <div class="col-100">
+                    <p class="text-small">.full-row-border-top</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-50 full-col-border-top small-margin-top">
+                    <p class="text-small">.full-col-border-top</p>
+                </div>
+                <div class="col-50 full-col-border-top small-margin-top">
+                    <p class="text-small">.full-col-border-top</p>
+                </div>
+            </div>
+            <div class="row full-row-border-bottom medium-margin-top">
+                <div class="col-100">
+                    <p class="text-small">.full-row-border-bottom</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-50 full-col-border-bottom small-margin-top">
+                    <p class="text-small">.full-col-border-bottom</p>
+                </div>
+                <div class="col-50 full-col-border-bottom small-margin-top">
+                    <p class="text-small">.full-col-border-bottom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padded-section">
+        <div class="container-small">
+            <div class="row">
+                <div class="col-100">
+                    <h2>Why?</h2>
+                    <p class="small-margin-top">
+                    This is a reaction the over engineered frameworks
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 	
 
-	<footer>
+	<footer class="padded-section">
 		<div class="container-small">
-			<div class="col-100">
-				<span>Brutus (the css grid, not the guy) • made by @slrncl</span>
-			</div>
+            <div class="row full-row-border-top">
+                <div class="col-100">
+                    <p class="text-small text-color-secondary small-margin-top">Brutus (the css grid, not the guy) • made by <a href="https://slrncl.com/">@slrncl</a></p>
+                </div>
+            </div>
 		</div>
 	</footer>
 
