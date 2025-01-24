@@ -76,7 +76,7 @@
     width: 50%;
     max-width: 50%;
   }
-  .large-container, .container {
+  .container, .container-small, .container-large {
     padding: 0 var(--gutter);
   }
   .right-padded-col {
