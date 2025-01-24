@@ -1,5 +1,5 @@
 # Brute(.css)
-A tiny (~3kb), opinionated, and aggressive css layout system to outrule unwieldy css framework overlord.
+A tiny (~3kb), opinionated, and aggressive css layout system to outrule unwieldy css framework overlords.
 
 
 <img width="1382" alt="Screenshot 2025-01-23 at 4 10 43 PM" src="https://github.com/user-attachments/assets/f33e7ada-acaf-417b-87aa-84992b4d8ab3" />
